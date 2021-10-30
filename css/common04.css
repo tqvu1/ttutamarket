@@ -581,11 +581,11 @@ ul,li,ol,dd {
 
 @media screen and (max-width: 1070px) { 
 
-    .cust_menu_detail01, .cust_menu_detail02, .cust_menu_detail03, .cust_menu_detail04 {
+    /* .cust_menu_detail01, .cust_menu_detail02, .cust_menu_detail03, .cust_menu_detail04 {
 
         display: none
 
-    }
+    } */
 
 
 
@@ -826,8 +826,66 @@ ul,li,ol,dd {
 
 
 @media screen and (max-width: 768px) {
+    #carouselExampleIndicators1 {
+        background-image: url('../images/banner-mobile.png') !important;
+    }
+    .main_text p, .sub_text p {
 
-    .cust_menu_detail01 {
+        text-align: center;
+
+    }
+    .main_text_slide div {
+        display: flex;
+        justify-content: center;
+    }
+    .main_text_slide div .main_text_large {
+        display: contents;
+        font-size: 36px !important;
+        line-height: 42px;
+    }
+
+    .main_text_slide div .main_text_small {
+        display: contents;
+        font-size: 18px !important;
+        line-height: 21px;
+    }
+    .cust_menu_detail06 {
+        text-align: center;
+    }
+    .slide_text ul {
+        padding: 0 !important;
+    }
+    .sub_text_slide {
+        padding: 0 !important;
+    }
+    .sub_text_slide p {
+        text-align: center !important;
+        font-size: 12px !important;
+        color: #808285 !important;
+    }
+
+    .phone_wrap {
+
+        margin-left: 0px;
+
+        margin-top: 300px !important;
+
+    }
+
+    .cust_active {
+
+        top: 75px;
+
+    }
+    .slide_text {
+
+        font-size: 12px;
+
+    }
+    .gallery-thumbs {
+        height: 600px !important;
+    }
+    /* .cust_menu_detail01 {
 
         left: 150%;
 
@@ -851,7 +909,7 @@ ul,li,ol,dd {
 
         left: -150%;
 
-    }
+    } */
 
 
 
@@ -923,11 +981,8 @@ ul,li,ol,dd {
 
 @media screen and (max-width: 532px) {
 
-    .main_text p, .sub_text p {
 
-        text-align: center;
 
-    }
 
     .footer_wrap img {
 
@@ -1027,7 +1082,7 @@ ul,li,ol,dd {
 
     .slide_text {
 
-        font-size: 16px;
+        font-size: 12px;
 
     }
 
@@ -1089,13 +1144,13 @@ ul,li,ol,dd {
 
         margin-left: 0px;
 
-        margin-top: 120px !important;
+        margin-top: 320px !important;
 
     }
 
     .cust_active {
 
-        top: 560px;
+        top: 55px;
 
     }
 
@@ -1107,7 +1162,7 @@ ul,li,ol,dd {
 
     .swiper-wrapper {
 
-        width: 90% !important; 
+        width: 100%; 
 
     }
 
@@ -1255,9 +1310,17 @@ ul,li,ol,dd {
 
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+    #carouselExampleIndicators1 .one {
+        background-color: unset;
+        height: 750px;
+    }
 
+    .slide_text {
 
+        font-size: 10px !important;
+
+    }
 
     .cu_340 {
 
