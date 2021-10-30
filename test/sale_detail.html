@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>휴대폰 판매</title>
+        <!-- 가비아 공통 css 테스트 ( 실제 적용시 삭제 )-->
+        <link rel="stylesheet" type="text/css" href="css/user.css">
+        <link rel="stylesheet" type="text/css" href="css/roboto.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <!-- 커스텀 css -->
+        <link rel="stylesheet" type="text/css" href="css/cust_common.css">
+        <link rel="stylesheet" type="text/css" href="css/sale_detail.css">
+        <!-- noto 폰트 css -->
+        <link rel="stylesheet" type="text/css" href="css/Noto_Sans.css">
+        <!-- 각종 이벤트 js -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/cust_event.js"></script>
+    </head>
+<body>
+    <!-- 헤더 -->
+    <div class="cust_header_wrap cust_center">
+        <div class="cust_header_cnt_wrap cust_flex">
+            <div class="cust_header_logo">
+                <a href="#">
+                    <span>Karskl</span>
+                    <span>shop</span>
+                </a>
+                <!-- 768사이즈 이하일때 노출 ( 아이콘 메뉴 )-->
+                <div class="cust_header_icon_menu media_aside_icon cust_center">
+                    <a href="">
+                        <img src="images/header_user_icon.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/header_notice_icon.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/search.png" alt="">
+                    </a>
+                </div>
+            <!---->
+            </div>
+            <!-- gnb 메뉴-->
+            <div class="cust_gnb_menu_wrap cust_flex">
+                <ul class="cust_gnb_menu cust_flex">
+                    <li><a href="">홈</a></li>
+                    <li><a href="">오늘의특가폰</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">구매문의</a></li>
+                    <li><a href="">구매후기</a></li>
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <!-- 아이콘 메뉴-->
+            <div class="cust_header_icon_menu cust_center">
+                <a href="">
+                    <img src="images/header_user_icon.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/header_notice_icon.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/search.png" alt="">
+                </a>
+            </div>
+            <!---->
+        </div>
+    </div>
+
+    <!-- 본문 (썸네일 및 상품 정보 나오는곳)-->
+    <div class="cust_cont_bg flex_row_center">
+        <div class="cust_sale_cnt_wrap cust_flex flex_colm mt50">
+            <div class="media_saledt_1430 flex_bt">
+                <div class="sale_thm_wrap">
+                    <img src="images/detail_img.png">
+                </div>
+
+                <div class="sale_info_wrap">
+
+                    <!-- 타이틀 -->
+                    <div class="detail_line">
+                        <div class="media_info_bigtxt fnt30 lh35 fhvbold">iPhone 11 Pro</div>
+                        <div class="media_info_smtxt fnt14 lh30">자동요금계산금액을 확인후 신청해주세요</div>
+                    </div>
+
+                    <!-- 색상선택 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">색상을 선택하세요</div>
+                        <ul class="detail_color cust_flex">
+                            <li class="cust_color_purple"></li>
+                            <li class="cust_color_pink"></li>
+                            <li class="cust_color_black"></li>
+                            <li class="cust_color_white"></li>
+                        </ul>
+                    </div>
+
+                    <!-- 가입형태 선택 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">원하시는 가입형태를 선택하세요</div>
+                        <ul class="telecom_selct flex_bt">
+                            <li class="cust_out_btn_sm cust_center cust_fill_btn_sm">통신사 이동</li>
+                            <li class="cust_out_btn_sm cust_center">기기 변경</li>
+                        </ul>
+                        <span class="media_info_xmtxt telecom_selct_label01 fnt14 lh30">쓰던번호 그대로, 통신사만 변경됩니다</span>
+                        <span class="media_info_xmtxt telecom_selct_label02 fnt14 lh30" style="display: none">통신사 변경없이 단말기만 교체하여 사용합니다</span>
+                    </div>      
+                                  
+                    <!-- 결제방법 선택 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">결제방법을 선택하세요</div>
+                        <div>
+                            <select class="cust_select" name="" id="">
+                                <option value="">현금 일시불 개통</option>
+                                <option value="">할부 24개월 개통</option>
+                            </select>
+                        </div>
+                        <span class="media_info_xmtxt fnt14 lh30">출고가격이 변경되면 월 사용료가 변동될 수 있습니다</span>
+                    </div>
+
+                    <!-- 단말기 요금제 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">단말기 요금제</div>
+                        <div class="cust_disable_div flex_col_center pdl25 mb10">5GX프라임 ( 기본료 89,000원 )</div>
+                        <div class="cust_disable_div_sm flex_col_center pdl25">데이터 : 완전무제한 / 통화 : 무제한+부가통화 300분 / 문자 : 무제한</div>
+                        <span class="media_info_xmtxt fnt14 lh30">출고가격이 변경되면 월 사용료가 변동될 수 있습니다</span>
+                    </div>
+
+                    <!-- 지원방식 선택 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">지원방식을 선택하세요</div>
+                        <div>
+                            <select class="cust_select" name="" id="">
+                                <option value="">공시지원금 개통</option>
+                                <option value="">선택약정 개통</option>
+                            </select>
+                        </div>
+                        <span class="media_info_xmtxt fnt14 lh30">공시지원금은  통신사에서 기기값을 선할인 해주는 방식</span><br>
+                        <span class="media_info_xmtxt fnt14 lh30">선택약정은 매월 통신요금의 25%를 할인해주는 방식</span>
+                    </div>                  
+
+
+                    <!-- 추가할인 방법 선택 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">추가 할인방법을 선택하세요</div>
+                        <div>
+                            <select class="cust_select" name="" id="">
+                                <option value="">미결합</option>
+                                <option value="">자동이체결합</option>
+                            </select>
+                        </div>
+                        <div>
+                            <form action="" class="cust_radio">
+                                <div>
+                                    <input type="radio" id="kb_80" name="card_sale" value="">
+                                    <label for="kb_80">KB국민카드 자동이체결합할인 ( 월 80만원 이상 )</label>                                    
+                                </div>
+                                <div>
+                                    <input type="radio" id="kb_30" name="card_sale" value="">
+                                    <label for="kb_30">KB국민카드 자동이체결합할인 ( 월 30만원 이상 )</label>                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>  
+                    
+                    
+                    <!-- 유선상품 선택 -->
+                    <div class="detail_line">
+                        <div class="media_info_midtxt fnt18 mb10">유선상품 신청을 선택하세요</div>
+                        <div>
+                            <select class="cust_select" name="" id="">
+                                <option value="">미신청</option>
+                                <option value="">인터넷 + TV</option>
+                            </select>
+                        </div>
+                        <div>
+                            <form action="" class="cust_radio">
+                                <div>
+                                    <input type="radio" id="tv_100" name="card_sale" value="">
+                                    <label for="tv_100">인터넷 100M +TV(라이트) = 현금 47 / 상품권 7</label>                                    
+                                </div>
+                                <div>
+                                    <input type="radio" id="tv_500" name="card_sale" value="">
+                                    <label for="tv_500">인터넷 500M +TV(라이트) = 현금 47 / 상품권 7</label>                                    
+                                </div>
+                                <div>
+                                    <input type="radio" id="tv_1000" name="card_sale" value="">
+                                    <label for="tv_1000">인터넷 1G +TV(라이트) = 현금 47 / 상품권 7</label>                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- 안내사항 -->
+                    <div class="detail_line" style="border: 0">
+                        <div class="media_info_midtxt fnt18 mb10">안내사항</div>
+                        <span class="media_info_xmtxt fnt14 lh30">요금제유지기간은 공시지원금 185일 선택약정130일 입니다</span><br>
+                        <span class="media_info_xmtxt fnt14 lh30">기존에 선택가능했던 포인트 사은품은 슈팅할인 금액으로 모두 대체되었기때문에 추기 사은품 및 포인트사은품은 제공되지 않는 점 양해부탁드립니다.</span><br>
+                    </div>                      
+                </div>
+
+                <!-- 가격정보 시작-->
+                <div class="sale_price_wrap">
+
+                    <!-- 타이틀 -->
+                    <div class="detail_line">
+                        <div class="fnt20 lh35 fbold">요금 자동계산</div>
+                        <div class="media_info_xmtxt fnt14 lh30">자동요금계산금액을 확인후 신청해주세요</div>
+                    </div>
+
+                    <!-- 단말기 가격정보 -->
+                    <div class="detail_line">
+                        <div class="device_info_title flex_col_center lh35 fbold">
+                            <span class="cust_device_a cust_center"><span class="cust_device_align">A</span></span>
+                            <span class="ml35"><span class="cust_device_align">단말기 가격정보</span></span>
+                        </div>
+                        <div class="cust_device_price fnt14 lh30">
+                            <ul>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">출고가</span>
+                                    <span class="fnt18 fhvbold">890,000원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">공시지원금</span>
+                                    <span class="fnt18 fhvbold">- 480,000원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_orange">떴다마켓 지원금</span>
+                                    <span class="fnt18 fhvbold cust_orange">- 890,000원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_blue">현금구입가</span>
+                                    <span class="fnt18 fhvbold cust_blue">480,000원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">할부원금</span>
+                                    <span class="fnt18 fhvbold">0원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">할부수수료<span class="fnt12 ml5">( 5.9% )</span></span>
+                                    <span class="fnt18 fhvbold">0원</span>
+                                </li>
+                                <li class="cust_flex flex_col_center" style="position: relative; margin-bottom: 0">
+                                    <span class="cust_device_a_non cust_center"><span class="cust_device_align">A</span></span>
+                                    <span class="fnt14 fbold cust_darkgray ml5">월할부금</span>
+                                    <span class="fnt18 fhvbold" style="position: absolute; right: 0">0원</span>
+                                </li>
+                                <li class="lh10" style="margin: 0">
+                                    <span class="fnt12 ml38">( 할부원금 + 할부수수료 )</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- 요금제 가격정보 -->
+                    <div class="detail_line">
+                        <div class="device_price_title flex_col_center lh35 fbold">
+                            <span class="device_price_b cust_center"><span class="cust_device_align">B</span></span>
+                            <span class="ml35"><span class="cust_device_align">요금제 가격정보</span></span>
+                        </div>
+                        <div class="cust_device_price fnt14 lh30">
+                            <ul>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">기본료</span>
+                                    <span class="fnt18 fhvbold">890,000원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">선택약정할인</span>
+                                    <span class="fnt18 fhvbold">- 480,000원</span>
+                                </li>
+                                <li class="flex_bt">
+                                    <span class="fnt14 fbold cust_darkgray">카드결합할인</span>
+                                    <span class="fnt18 fhvbold">- 890,000원</span>
+                                </li>
+                                <li class="cust_flex flex_col_center" style="position: relative; margin-bottom: 0">
+                                    <span class="cust_device_b_non cust_center"><span class="cust_device_align">B</span></span>
+                                    <span class="fnt14 fbold cust_darkgray ml5">월기본료</span>
+                                    <span class="fnt18 fhvbold" style="position: absolute; right: 0">0원</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="detail_line" style="border:0">
+                        <div class="cust_device_price fnt14 lh30">
+                            <ul>
+                                <li class="flex_bt" style="position: relative; margin-bottom: 0">
+                                    <span class="fnt18 lh35 cust_black">최종 월 납부금액</span>
+                                    <div class="flex_col_center">
+                                        <span class="cust_device_a_non cust_center"><span class="cust_device_align">A</span></span>
+                                        <span class="fnt18 fhvbold ml10 mr10">+</span>
+                                        <span class="cust_device_b_non cust_center"><span class="cust_device_align">B</span></span>
+                                    </div>
+                                </li>
+                                <li class="lh10" style="margin: 0">
+                                    <span class="fnt12 ml10">( 할부원금 + 할부수수료 )</span>
+                                </li>
+                                <li class="cust_flex flex_end" style="margin: 30px 0 0 0">
+                                    <span class="fnt40 fhvbold cust_black">89,000원</span>
+                                </li>
+                                <li class="cust_flex flex_end" style="margin: 5px 0 0 0 ">
+                                    <span class="fnt12">vat 포함</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 신청하기 버튼 -->
+                    <div class="cust_apply_button">
+                        <button class="cust_fill_btn_xl cust_center">신청하기</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            <!-- 이곳은 탭과 상세페이지가 나오는곳입니다 (기존 가비아에서 뿌려주는것을 보여주면됨)-->
+            <div class="cust_cont_bg flex_row_center">
+                <div class="cust_sale_cnt_wrap">
+                    이곳은 탭과 상세페이지가 나오는곳입니다
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer_wrap flex_row_center">
+        <div class="footer_cnt flex_row_center flex_colm">
+            <div class="media_footer_btn flex_bt mb20">
+                <div class="cust_header_logo media_footer_logo">
+                        <span>Karskl</span>
+                        <span>shop</span>
+                </div>
+                <div>
+                    <ul class="cust_flex">
+                        <a href="">
+                            <li class="footer_btn cust_center">이용안내</li>  
+                        </a>
+                        <a href="">
+                            <li class="footer_btn cust_center ml15">공지사항</li>  
+                        </a>
+                        <a href="">
+                            <li class="footer_btn cust_center ml15">자주찾는 질문</li>  
+                        </a>
+                        <a href="">
+                            <li class="footer_btn cust_center ml15">1:1 문의하기</li>  
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_addr">
+                <span>업체명 : 주식회사 떴다마켓<span class="ml30">대표자 : 김광세</span><span class="ml30">개인정보보호책임자 : 오수정</span></span><br>
+                <span>주    소 : 서울시 영등포구 선유로9길 10 SK V1센터 608호<span class="ml30">사업자번호 : 477 - 86 - 01616</span><span class="ml30">통신판매업신고번호 : 제 2020 - 서울영등포 - 0203 호</span></span><br>
+                <span>이메일 : ttuttamarket@naver.com<span class="ml30">고객센터 : <b>1522 - 1149</b> ( 평일 오전 11 ~ 오후 8시 까지 )</span></span><br>
+                <a href="">
+                    <span style="text-decoration: underline;">개인정보처리방침</span>
+                </a>
+                <a href="">
+                    <span class="ml30" style="text-decoration: underline;">이용약관</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

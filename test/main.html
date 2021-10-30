@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 판매</title>
+    <!-- 가비아 공통 css 테스트 ( 실제 적용시 삭제 )-->
+    <link rel="stylesheet" type="text/css" href="css/user.css">
+    <link rel="stylesheet" type="text/css" href="css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- 커스텀 css -->
+    <link rel="stylesheet" type="text/css" href="css/cust_common.css">
+    <link rel="stylesheet" type="text/css" href="css/cust_main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- noto 폰트 css -->
+    <link rel="stylesheet" type="text/css" href="css/Noto_Sans.css">
+    <!-- 각종 이벤트 js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/cust_event.js"></script>
+
+    <style>
+        .bx-wrapper {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .bx-wrapper .bx-pager {
+            bottom: 0px;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: #5D5FEF;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background: #C4C4C4;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a:hover {
+            background: #C4C4C4;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <div class="cust_header_wrap cust_center">
+        <div class="cust_header_cnt_wrap cust_flex">
+            <div class="cust_header_logo">
+                <a href="#">
+                    <span>Karskl</span>
+                    <span>shop</span>
+                </a>
+                <!-- 768사이즈 이하일때 노출 ( 아이콘 메뉴 )-->
+                <div class="cust_header_icon_menu media_aside_icon cust_center">
+                    <a href="">
+                        <img src="images/header_user_icon.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/header_notice_icon.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/search.png" alt="">
+                    </a>
+                </div>
+            <!---->
+            </div>
+            <!-- gnb 메뉴-->
+            <div class="cust_gnb_menu_wrap cust_flex">
+                <ul class="cust_gnb_menu cust_flex">
+                    <li><a href="">홈</a></li>
+                    <li><a href="">오늘의특가폰</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">구매문의</a></li>
+                    <li><a href="">구매후기</a></li>
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <!-- 아이콘 메뉴-->
+            <div class="cust_header_icon_menu cust_center">
+                <a href="">
+                    <img src="images/header_user_icon.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/header_notice_icon.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/search.png" alt="">
+                </a>
+            </div>
+            <!---->
+        </div>
+    </div>
+    <!-- 본문 시작 -->
+    <div class="cust_cont_bg flex_row_center">
+        <div class="cust_cont_wrap mt50">
+            <!-- 상단 슬라이드, 구매후기-->
+            <div class="flex_bt media_main_silde">
+                <div class="cust_slide_wrap cust_block_wrap">
+                    <div class="slider_main">
+                        <div><img src="images/main_slide_img01.png" alt=""></div>
+                        <div><img src="images/main_slide_img01.png" alt=""></div>
+                        <div><img src="images/main_slide_img01.png" alt=""></div>
+                        <div><img src="images/main_slide_img01.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- 상단 구매후기 -->
+                <div class="cust_review_wrap cust_block_wrap">
+                    <div class="flex_bt">
+                        <span class="media_main_review fnt30 lh20">구매후기</span>
+                        <a href="#">
+                            <span class="fnt16 more_btn">더보기<img src="images/cust_more_btn.png" alt=""></span>
+                        </a>
+                    </div>
+
+                    <div>
+                    <!-- 구매후기 리스트 01-->
+                        <div class="cust_review_list">
+                            <a href="#">
+                                <ul class="cust_flex" style="position: relative;">
+                                    <li class="cust_review_pic">
+                                        <img src="images/review_img01.png" alt="">
+                                    </li>
+                                    <li class="media_main_word ml30 cust_flex flex_colm">
+                                        <span class="review_title fnt16 lh25">우리딸 신학기 휴대폰 구매했어용</span>
+                                        <span class="review_sub_title fnt14 lh25"><span>모델명 : </span> 삼성 갤럭시 S21 울트라</span>
+                                        <span class="lh25">
+                                            <img src="images/star_icon.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="review_date_wrap">
+                                        <span class="review_date_txt fnt12">2020.02.24</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <!---->
+
+                        <!-- 구매후기 리스트 02-->
+                        <div class="cust_review_list">
+                            <a href="#">
+                                <ul class="cust_flex" style="position: relative;">
+                                    <li class="cust_review_pic">
+                                        <img src="images/review_img02.png" alt="">
+                                    </li>
+                                    <li class="media_main_word ml30 cust_flex flex_colm">
+                                        <span class="review_title fnt16 lh25">우리딸 신학기 휴대폰 구매했어용</span>
+                                        <span class="review_sub_title fnt14 lh25"><span>모델명 : </span> 삼성 갤럭시 S21 울트라</span>
+                                        <span class="lh25">
+                                            <img src="images/star_icon.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="review_date_wrap">
+                                        <span class="review_date_txt fnt12">2020.02.24</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <!---->
+                        <!-- 구매후기 리스트 03-->
+                        <div class="cust_review_list">
+                            <a href="#">
+                                <ul class="cust_flex" style="position: relative;">
+                                    <li class="cust_review_pic">
+                                        <img src="images/review_img03.png" alt="">
+                                    </li>
+                                    <li class="media_main_word ml30 cust_flex flex_colm">
+                                        <span class="review_title fnt16 lh25">우리딸 신학기 휴대폰 구매했어용</span>
+                                        <span class="review_sub_title fnt14 lh25"><span>모델명 : </span> 삼성 갤럭시 S21 울트라</span>
+                                        <span class="lh25">
+                                            <img src="images/star_icon.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="review_date_wrap">
+                                        <span class="review_date_txt fnt12">2020.02.24</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <!---->
+                        <!-- 구매후기 리스트 04-->
+                        <div class="cust_review_list">
+                            <a href="#">
+                                <ul class="cust_flex" style="position: relative;">
+                                    <li class="cust_review_pic">
+                                        <img src="images/review_img04.png" alt="">
+                                    </li>
+                                    <li class="media_main_word ml30 cust_flex flex_colm">
+                                        <span class="review_title fnt16 lh25">우리딸 신학기 휴대폰 구매했어용</span>
+                                        <span class="review_sub_title fnt14 lh25"><span>모델명 : </span> 삼성 갤럭시 S21 울트라</span>
+                                        <span class="lh25">
+                                            <img src="images/star_icon.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="review_date_wrap">
+                                        <span class="review_date_txt fnt12">2020.02.24</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <!---->                      
+                    </div>
+                </div>
+                <!---->
+            </div>
+            <!-- 상단 슬라이드,구매후기 끝-->
+            <!-- md 추천 시작-->
+            <div class="cust_list_wrap mt50">
+                <!-- 타이틀 -->
+                <div class="mb10">
+                    <span class="media_main_recm fnt30">MD 추천상품</span>
+                    <span class="fnt16 page_subtxt ml10">최신 스마트폰에 사은품구성도 최강</span>
+                </div>
+
+                <!-- 리스트 ( 리스트는 총 16개 4x4   1페이지로 해주시고 나머지는 페이징 처리해주세요)-->
+                <div class="page_list_area cust_flex flex_wrap">
+                    <!-- 상품 01 -->
+                    <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img01.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 02 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img02.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 03 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img03.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 04 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img04.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 05 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img04.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 06 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img01.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 07 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img02.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                     <!-- 상품 08 -->
+                     <div class="page_list_wrap">
+                        <ul class="page_list">
+                            <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                            <li><img src="images/page_list_img03.jpg" alt=""></li>
+                            <li class="media_main_txtmt mt10 mb10">
+                                <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                            </li>
+                            <li class="media_main_txtmt flex_bt">
+                                <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->  
+                </div>
+                <!-- 페이징 -->
+                <div class="media_main_pt30 cust_center pdt50">
+                    <div class="cust_paging cust_center cust_paging_active">1</div>
+                    <div class="cust_paging cust_center ml10">2</div>
+                    <div class="cust_paging cust_center ml10">3</div>
+                    <div class="cust_paging cust_center ml10">4</div>
+                </div>
+            </div>
+            <!-- 메인배너 -->
+            <div class="media_main_banner mt50 mb50">
+                <a href="">
+                    <img src="images/main_banner.png" alt="">
+                </a>
+            </div>
+
+
+ <!-- 최신 스마트폰 시작 -->           
+            <div class="cust_list_wrap mt50">
+                <!-- 타이틀 -->
+                <div class="mb10">
+                    <span class="media_main_recm fnt30">최신 스마트폰</span>
+                    <span class="fnt16 page_subtxt ml10">최신 스마트폰에 사은품구성도 최강</span>
+                </div>
+                <!-- tab -->
+                <div>
+                    <ul class="media_main_tab flex_bt mt50">
+                        <li class="cust_tab cust_tab_active">SK Telecom</li>
+                        <li class="cust_tab">KT olleh</li>
+                        <li class="cust_tab">LG U+</li>
+                        <li class="cust_tab">알뜰폰</li>
+                        <li class="allprod_btn_wrap">
+                            <a href="#">
+                                <span class="fnt16 allprod_btn">더보기<img src="images/cust_more_btn02.png" alt=""></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 리스트 ( 리스트는 총 16개 4x4   1페이지로 해주시고 나머지는 페이징 처리해주세요)-->
+                <div class="page_list_area cust_flex flex_wrap">
+                    <div class="tab_sk cust_flex flex_wrap">  <!-----------------------------------------------------------------   TAB_SK 컨텐츠 -->
+                        <!-- 상품 01 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img01.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 02 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img02.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 03 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img03.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 04 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img04.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 05 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img01.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 06 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img02.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 07 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img03.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 08 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img04.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                    </div>
+
+                    <div class="tab_kt cust_flex flex_wrap" style="display: none">  <!-----------------------------------------------------------------   TAB_KT 컨텐츠 -->
+                        <!-- 상품 01 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img01.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 02 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img02.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        
+                    </div>
+
+                    <div class="tab_lg cust_flex flex_wrap" style="display: none">  <!-----------------------------------------------------------------   TAB_lg 컨텐츠 -->
+                        <!-- 상품 01 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img01.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 02 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img02.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 03 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img03.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        
+                    </div>
+
+                    <div class="tab_etc cust_flex flex_wrap" style="display: none">  <!-----------------------------------------------------------------   TAB_알뜰폰 컨텐츠 -->
+                        <!-- 상품 01 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img04.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 02 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img01.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 03 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img02.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <!-- 상품 04 -->
+                        <div class="page_list_wrap">
+                            <ul class="page_list">
+                                <li><img src="images/telecom_sk_logo.png" alt=""></li>
+                                <li><img src="images/page_list_img02.jpg" alt=""></li>
+                                <li class="media_main_txtmt mt10 mb10">
+                                    <span class="media_main_title fnt20 fbold">갤럭시 S20</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">공시지원 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold cust_blue">160,000원</span>
+                                </li>
+                                <li class="media_main_txtmt flex_bt">
+                                    <span class="media_main_mitxt fnt14 fnomal flex_col_center">선택약정 구매가</span>
+                                    <span class="media_main_bigtxt fnt20 fhvbold">160,000원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        
+                    </div>
+                </div>
+
+                    </div>                                    
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer_wrap flex_row_center">
+                <div class="footer_cnt flex_row_center flex_colm">
+                    <div class="media_footer_btn flex_bt mb20">
+                        <div class="cust_header_logo media_footer_logo">
+                                <span>Karskl</span>
+                                <span>shop</span>
+                        </div>
+                        <div>
+                            <ul class="cust_flex">
+                                <a href="">
+                                    <li class="footer_btn cust_center">이용안내</li>  
+                                </a>
+                                <a href="">
+                                    <li class="footer_btn cust_center ml15">공지사항</li>  
+                                </a>
+                                <a href="">
+                                    <li class="footer_btn cust_center ml15">자주찾는 질문</li>  
+                                </a>
+                                <a href="">
+                                    <li class="footer_btn cust_center ml15">1:1 문의하기</li>  
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_addr">
+                        <span>업체명 : 주식회사 떴다마켓<span class="ml30">대표자 : 김광세</span><span class="ml30">개인정보보호책임자 : 오수정</span></span><br>
+                        <span>주    소 : 서울시 영등포구 선유로9길 10 SK V1센터 608호<span class="ml30">사업자번호 : 477 - 86 - 01616</span><span class="ml30">통신판매업신고번호 : 제 2020 - 서울영등포 - 0203 호</span></span><br>
+                        <span>이메일 : ttuttamarket@naver.com<span class="ml30">고객센터 : <b>1522 - 1149</b> ( 평일 오전 11 ~ 오후 8시 까지 )</span></span><br>
+                        <a href="">
+                            <span style="text-decoration: underline;">개인정보처리방침</span>
+                        </a>
+                        <a href="">
+                            <span class="ml30" style="text-decoration: underline;">이용약관</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

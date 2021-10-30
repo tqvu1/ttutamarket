@@ -1,0 +1,272 @@
+.cust_sale_cnt_wrap {
+    width: 1400px;
+}
+.sale_thm_wrap {
+    padding: 30px;
+    /*
+    background: #fff;
+    */
+    border-radius: 25px;
+}
+.sale_info_wrap {
+    width: 420px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 25px;
+}
+.sale_price_wrap {
+    width: 268px;
+    height: 900px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 25px;
+    position: relative;
+}
+.detail_color li {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.detail_color li:first-child {
+    margin-left: 0;
+}
+.detail_color_active {
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    background-image: url(../images/cust_check.png);
+    top: 50%;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -15px;
+    z-index: 9999;
+}
+/* 단말기 가격정보 */
+
+.device_info_title, .device_price_title {
+    width: 170px;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: #5D5FEF;
+    border-radius: 30px;
+    position: relative;
+}
+.device_price_title {
+    background: #FA4D28;
+}
+.cust_device_a, .device_price_b {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3B3CB7;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+}
+.device_price_b {
+    background: #A92B0F  
+}
+.cust_device_a_non, .cust_device_b_non {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    background: #3B3CB7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.cust_device_b_non {
+    background: #A92B0F;
+}
+.cust_device_align {
+    position: relative;
+    top:-1px;
+}
+.cust_device_price ul li {
+    margin: 10px;
+}
+.cust_apply_button {
+    position: absolute;
+    left: 0px;
+    bottom: -120px;
+}
+
+.media_aside_icon {
+    display: none;
+}
+
+/* 미디어 쿼리 */
+
+/* 1430 */
+@media screen and ( max-width:1430px) {
+    .cust_sale_cnt_wrap, .cust_apply_button button {
+        width: 500px;
+    }
+    .media_saledt_1430 {
+        display:block
+    }
+    .sale_price_wrap {
+        width: 420px;
+        margin-top: 50px;
+    }
+    .cust_cont_bg {
+        padding-top: 50px;
+    }
+}
+
+/* 768 */
+@media screen and ( max-width:768px) {
+    /* 슬라이드 */
+    .slider_sale_wrap {
+        width: 460px;
+    }
+    .cust_cont_wrap {
+        margin-top: 20px;
+    }
+    .slider_sale_wrap {
+        margin-top: 50px;
+    }
+    .media_aside_icon {
+        display: block;
+        margin-top: 11px;
+    }
+    .cust_sale_cnt_wrap{
+        margin-bottom: 40px;
+    }
+    .cust_cont_bg {
+        padding-top: 30px;
+    }
+}
+
+/* 530 */
+@media screen and ( max-width:530px) {
+    .cust_sale_cnt_wrap, .cust_apply_button button {
+        width: 400px;
+    }
+    .cust_apply_button button {
+        width: 420px;
+    }
+    .sale_info_wrap, .sale_price_wrap {
+        width: 360px;
+        padding: 10px 30px;
+    }
+    .sale_price_wrap {
+        margin-top: 20px;
+    }
+    .detail_line {
+        padding: 20px 0px;
+    }
+    /*텍스트*/
+    .media_info_bigtxt {
+        font-size: 25px;
+    }
+    .media_info_midtxt {
+        font-size: 16px; 
+    }
+    .media_info_smtxt {
+        font-size: 12px;
+    }
+    .media_info_xmtxt {
+        font-size: 11px;
+    }
+    .device_info_title, .device_price_title, .cust_device_a, .device_price_b {
+        font-size: 16px;
+    }
+    /* 버튼 */
+    .cust_fill_btn_lg, .cust_fill_btn_sm, .cust_out_btn_lg, .cust_out_btn_sm {
+        width: 170px;
+        height: 53px;
+        font-size: 14px;
+    }
+    /* 셀렉트 */
+    .cust_select {
+        width: 100%;
+        height: 53px;
+        padding-left: 25px;
+        font-size: 14px;
+    }
+    .cust_disable_div, .cust_disable_div_sm {
+        width: 310px;
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px; 
+    }
+    .cust_disable_div_sm {
+        font-size: 12px;
+    }
+    .cust_cont_bg {
+        padding-top: 20px;
+    }
+}
+
+/* 460 */
+@media screen and ( max-width:460px) {
+    .media_info_bigtxt {
+        font-size: 20px;
+    }
+    .cust_sale_cnt_wrap, .cust_apply_button button {
+        width: 360px;
+        margin-top: 20px;
+    }
+    .sale_info_wrap, .sale_price_wrap {
+        width: 300px;
+        padding: 10px 30px;
+    }
+    .cust_fill_btn_lg, .cust_fill_btn_sm, .cust_out_btn_lg, .cust_out_btn_sm {
+        width: 140px;
+        height: 53px;
+        font-size: 14px;
+    }
+    .cust_disable_div, .cust_disable_div_sm {
+        width: 250px;
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .cust_disable_div_sm {
+        font-size: 12px;
+    }
+    .cust_cont_bg {
+        padding-top: 10px;
+    }
+
+}
+
+/* 380 */
+@media screen and ( max-width:380px) {
+    .media_info_bigtxt {
+        font-size: 18px;
+    }
+    .cust_sale_cnt_wrap, .cust_apply_button button {
+        width: 320px;
+        margin-top: 20px;
+    }
+    .sale_info_wrap, .sale_price_wrap {
+        width: 260px;
+        padding: 10px 30px;
+    }
+    .cust_fill_btn_lg, .cust_fill_btn_sm, .cust_out_btn_lg, .cust_out_btn_sm {
+        width: 120px;
+        height: 53px;
+        font-size: 14px;
+    }
+    .cust_disable_div, .cust_disable_div_sm {
+        width: 210px;
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .cust_disable_div_sm {
+        font-size: 12px;
+    }
+    .cust_radio label {
+        font-size: 11px;
+    }
+
+}

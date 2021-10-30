@@ -1,0 +1,457 @@
+/* 슬라이드 */
+.cust_slide_wrap {
+    width: 633px;
+    height: 440px;
+}
+
+/* 구매후기 */
+.cust_review_wrap {
+    width: 517px;
+}
+.cust_review_pic img {
+    width: 75.94px;
+    height: 76px;
+}
+.cust_review_list {
+    margin-top: 26px;
+}
+.review_title {
+    color: #6C6C6C;
+    letter-spacing: -.3px;
+    font-weight: 500;
+}
+.review_sub_title, .review_date_txt {
+    color: #A2A1A1;
+}
+.review_date_wrap {
+    position: absolute;
+    right: 0;
+}
+
+/* 탭*/
+.tab_sk .md_list_wrap:nth-child(4n+1),
+.tab_kt .md_list_wrap:nth-child(4n+1),
+.tab_lg .md_list_wrap:nth-child(4n+1),
+.tab_etc .md_list_wrap:nth-child(4n+1) {
+    margin-left: 0px;
+}
+.cust_tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 238px;
+    height: 56px;
+    border-radius: 30px;
+    border: 2px solid #5D5FEF;
+    font-size: 25px;
+    color: #5D5FEF;
+    cursor: pointer;
+}
+.cust_tab_active {
+    background: #5D5FEF;
+    color: #fff
+}
+.allprod_btn_wrap {
+    width: 238px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.media_aside_icon {
+    display: none;
+}
+/* 미디어 쿼리 */
+/* 1430 */
+@media screen and ( max-width:1430px) {
+
+    .cust_header_cnt_wrap {
+        width: 100%;
+    }
+
+    .cust_gnb_menu {
+        width: 100%;
+    }
+
+    .cust_gnb_menu li {
+        margin-left: 20px;
+    }
+
+    .cust_gnb_menu li:nth-child(1){
+        display: none;
+        margin-left: 0;
+    }
+    .cust_gnb_menu li:nth-child(3){
+        display: none;
+    }
+    .cust_slide_wrap {
+
+    }
+    .cust_review_wrap {
+
+    }
+    .cust_cont_wrap {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+    }
+    .media_main_silde {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cust_review_wrap {
+        width: 633px;
+        margin-top: 50px;
+    }
+    /* MD추천 */
+    .cust_list_wrap {
+        width: 633px;
+    }
+    .page_list_area .page_list_wrap:nth-child(2n+1) {
+        margin-left: 0px;
+    }
+    .cust_tab {
+        font-size: 15px;
+        width: 200px;
+        height: 46px;
+        margin-left: 10px;
+    }
+    .media_main_banner {
+        display: none;
+    }
+    /* footer */
+    .media_footer_btn {
+        display: block;
+    }
+    .footer_btn {
+        margin-top: 20px;
+    }
+    .footer_cnt {
+        width: 100%;
+    }
+    .footer_wrap {
+        padding: 30px 0px 20px 20px;
+    }
+}
+
+/* 850 */
+@media screen and ( max-width:850px) {
+    /* 헤더 컨텐츠 패딩 */
+    .cust_header_cnt_wrap {
+        padding: 0 20px;
+    }
+
+    .cust_header_logo span {
+        font-size: 25px;
+    }
+    .cust_gnb_menu li {
+        font-size: 16px;
+    }
+    .cust_gnb_menu li:nth-child(2) {
+        margin-left: 0;
+    }
+    .cust_header_icon_menu a {
+        margin-left: 10px;
+    }
+    .cust_header_icon_menu > a > img {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 1px;
+    }
+    .footer_btn {
+        width: 150px;
+    }
+
+}
+
+/* 768 */
+@media screen and ( max-width:768px) {
+    .cust_header_cnt_wrap{
+        display: block;
+        padding: 0 10px;
+    }
+    .cust_header_icon_menu {
+        display: none;
+    }
+    .cust_gnb_menu {
+        justify-content: start;
+    }
+    .cust_header_cnt_wrap {
+        height: 100%;
+    }
+    .cust_header_logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .cust_gnb_menu_wrap {
+        margin-top: 16px;
+    }
+    .media_aside_icon {
+        display: block;
+        margin-top: 11px;
+    }
+    /* 슬라이드 */
+    .cust_slide_wrap {
+        width: 400px;
+        height: 280px;
+    }
+    .cust_block_wrap {
+        padding: 30px;
+    }
+
+    /* 구매후기 */
+    .cust_review_wrap {
+        width: 400px;
+        margin-top: 20px;
+    }
+    .media_main_review, .media_main_recm {
+        font-size: 20px;
+    }
+    .review_title {
+        font-size: 14px;
+    }
+    .review_sub_title {
+        font-size: 12px;
+    }
+    .review_date_txt {
+        font-size: 11px;
+    }
+    /* MD 추천 */
+    .cust_list_wrap {
+        width: 400px;
+        margin-top: 20px;
+        padding: 30px;
+    }
+    .page_subtxt {
+        font-size: 11px;
+    }
+    .page_list_wrap {
+        width: 160px;
+        height: 260px;
+        padding: 10px
+    }
+    .page_list_area .page_list_wrap {
+        margin-left: 10px;
+    }
+    .page_list_area {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .page_list li:nth-child(2) img {
+        width: 100%;
+        height: 100%;
+
+    }
+    .page_list > li:nth-child(1) > img {
+        width: 20px;
+        height: 20px;
+    }
+    .media_main_title {
+        font-size: 16px;
+    }
+    .media_main_mitxt {
+        font-size: 12px;
+    }
+    .media_main_bigtxt {
+        font-size: 14px;
+    }
+    .media_main_txtmt {
+        margin-top: 0;
+    }
+    /* 페이징 */
+    .cust_paging {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .media_main_pt30 {
+        padding-top: 30px;
+    }
+    /* 최신 스마트폰 */
+    .cust_tab {
+        font-size: 13px;
+        width: 200px;
+        height: 36px;
+    }
+    .allprod_btn_wrap {
+        display: none;
+    }
+    .allprod_btn {
+        font-size: 11px;
+    }
+    .media_main_tab {
+        margin-top: 30px;
+    }
+    .cust_cont_bg {
+        padding-bottom: 50px;
+    }
+    /* footer */
+    .media_footer_logo {
+        justify-content: start;
+    }
+    .footer_btn {
+        width: 100px;
+        font-size: 12px;
+        height: 33px;
+    }
+    .footer_addr {
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+
+/* 500 */
+@media screen and ( max-width:500px) {
+    /* 슬라이드 */
+    .cust_block_wrap {
+        padding: 30px;
+    }
+    .cust_slide_wrap {
+        width: 340px;
+        height: 230px;
+    }
+    .cust_review_wrap {
+        width: 340px;
+    }
+    .cust_list_wrap {
+        width: 380px;
+        padding: 30px 10px;
+    }
+    .page_list_wrap {
+        width: 150px;
+        height: 245px;
+        margin-top: 20px;
+    }
+    .media_main_title {
+        font-size: 14px;
+    }
+    .media_main_mitxt {
+        font-size: 11px;
+    }
+    .media_main_bigtxt {
+        font-size: 13px;
+    }
+    .tab_sk, .tab_kt, .tab_lg, .tab_etc {
+        justify-content: center;
+    }
+    /**/
+    .review_date_txt {
+        display:  none;
+    }
+    .review_title, .review_sub_title {
+        width: 186px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    /* footer */
+    .media_footer_logo {
+        justify-content: start;
+    }
+    .footer_btn {
+        width: 80px;
+        font-size: 11px;
+        height: 33px;
+        margin-left: 5px;
+    }
+    .footer_addr {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .footer_addr span {
+        display: block;
+    }
+    .footer_addr span {
+        margin-left: 0;
+    }
+    .footer_wrap {
+        height: unset;
+    }
+
+}
+/* 400 */
+@media screen and ( max-width:400px) {
+    .cust_gnb_menu li {
+        font-size: 11px;
+    }
+}
+/* 430 */
+@media screen and ( max-width:380px) {
+    .cust_gnb_menu li {
+        font-size: 14px;
+    }
+    .cust_slide_wrap {
+        width: 280px;
+        height: 200px
+    }
+    .cust_block_wrap {
+        padding: 30px 20px;
+    }
+    .cust_review_wrap {
+        width: 280px;
+    }
+    .media_main_review, .media_main_recm {
+        font-size: 16px;
+    }
+    .more_btn {
+        font-size: 12px;
+    }
+    .cust_review_pic img {
+        width: 60px;
+        height: 60px;
+    }
+    /* md 추천 */
+    .cust_list_wrap {
+        width: 280px;
+        padding: 30px 20px;
+    }
+    .page_list_wrap {
+        width: 220px;
+        height: 325px;
+        margin-top: 20px;
+    }
+    .page_list_area .page_list_wrap {
+        margin-left: 0;
+    }
+    .media_main_title {
+        font-size: 16px;
+    }
+    .media_main_bigtxt {
+        font-size: 15px;
+    }
+    .cust_tab {
+        font-size: 11px;
+        height: 26px;
+        margin-left: 3px;
+    }
+    /* footer */
+    .footer_wrap {
+        padding: 30px 0px 20px 10px;
+    }
+
+    .footer_btn {
+        width: 70px;
+        font-size: 10px;
+    }
+    
+}
+
+
+/* 350 */
+@media screen and ( max-width:350px) {
+    .cust_gnb_menu li {
+        margin-left: 10px;
+    }
+}

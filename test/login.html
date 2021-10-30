@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 판매</title>
+    <!-- 가비아 공통 css 테스트 ( 실제 적용시 삭제 )-->
+    <link rel="stylesheet" type="text/css" href="css/user.css">
+    <link rel="stylesheet" type="text/css" href="css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- 커스텀 css -->
+    <link rel="stylesheet" type="text/css" href="css/cust_common.css">
+    <link rel="stylesheet" type="text/css" href="css/cust_login.css">
+    <!-- noto 폰트 css -->
+    <link rel="stylesheet" type="text/css" href="css/Noto_Sans.css">
+</head>
+<body>
+
+    <!-- 로그인 상단 ( 헤더 아님 )--> 
+        <div class="login_top_wrap cust_center">
+            <div class="login_top_cont">
+                <span>Karskl</span>
+                <span>shop</span>
+            </div>
+        </div>
+
+    <!-- 로그인 본문 --> 
+        <div class="login_cont_wrap cust_center flex_colm">
+            <div class="login_cont_bg">
+                <div>
+                    <span class="fnt30">로그인</span>
+                </div>
+                <!-- 아이디 입력 -->
+                <div class="login_input_name">
+                    <img src="images/login_user_icon.png" alt="">
+                    <input type="text" placeholder="아이디를 입력하세요">
+                </div>
+                <div class="cust_line"></div>
+                <!---->
+                <!-- 패스워드 입력 -->
+                <div class="login_input_pass">
+                    <img src="images/login_pass_icon.png" alt="">
+                    <input type="password" placeholder="비밀번호를 입력하세요">
+                </div>
+                <div class="cust_line"></div>
+                <!---->
+                <!-- 아이디 저장, 비밀번호 찾기 -->
+                <div class="flex_bt media_blk mt20">
+                    <div>
+                        <input type="radio" id="id_save" class="">
+                        <label for="id_save">아이디저장하기</label>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="pass_forg cust_blue fnt14">비밀번호를 잊어버리셧나요?</span>
+                        </a>
+                    </div>
+                </div>
+                <!---->
+                <!-- 로그인,비회원 버튼 -->
+                <div class="login_cust_btn flex_bt media_ml mt70">
+                    <button class="cust_fill_btn_lg">로그인</button>
+                    <button class="cust_out_btn_lg">비회원</button>
+                </div>
+            </div>
+            <!-- 회원가입 유도 텍스트 -->
+            <div class="login_cust_mebtxt fnt14 mt30">
+                <a href="#">
+                    <span>아직 회원이 아니신가요?  <span class="login_cust_mebtxt_link cust_blue">회원</span>으로 가입후 이용하세요</span>
+                </a>
+            </div>
+        </div>
+</body>
+</html>

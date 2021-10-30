@@ -1,0 +1,307 @@
+.cust_chart {
+    height: 442px;
+    border: 1px solid #DDDCDC;
+    border-radius: 25px;
+}
+.cust_title_bg {
+    background: #5D5FEF;
+    border-radius: 25px 25px 0px 0px;
+}
+.cust_title_bg02 {
+    background: #FA4D28;
+    border-radius: 25px 25px 0px 0px;
+}
+.cust_device_a_non {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    background: #3B3CB7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.cust_device_b_non {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    background: #A92B0F;
+    font-size: 14px;
+    font-weight: 500;
+}
+.cust_device_align {
+    position: relative;
+    top:-1px;
+}
+.media_aside_icon {
+    display: none;
+}
+
+
+/* 미디어 쿼리 */
+
+/* 1430 */
+@media screen and ( max-width:1430px) {
+    .cust_list_wrap {
+        display: block;
+    }
+    .media_apply_blk {
+        width: 100%;
+    }
+    .media_apply_prinfo {
+        display: block;
+    }
+    .cust_input03 {
+        margin-top: 30px;
+        margin-left: 0 !important;
+    }
+    .cust_input03 input {
+        width: 633px;
+    }
+    .media_apply_blk_mt {
+        margin-top: 30px;
+    }
+    /* 상세 */
+    .media_apply_view {
+        display: inline-block;
+        width: 400px;
+        text-align: right;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .media_apply_view_lf {
+        display: inline-block;
+        width: 400px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+        top: 5px;
+        margin-left: 0;
+    }
+}
+
+/* 768 */
+@media screen and ( max-width:768px) {
+
+    .media_aside_icon {
+        display: block;
+        margin-top: 11px;
+    }
+    .cust_sale_cnt_wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+    }
+    /*텍스트*/
+    .media_apply_xltxt {
+        font-size: 25px;
+    }
+    .media_apply_bigtxt {
+        font-size: 18px;
+    }
+    .media_apply_bmidtxt {
+        font-size: 16px; 
+    }
+    .media_apply_midtxt {
+        font-size: 14px; 
+    }
+    .media_apply_smtxt {
+        font-size: 12px;
+    }
+    .media_apply_xmtxt {
+        font-size: 11px;
+    }
+    .media_apply_blk_mt {
+        margin-top: 30px;
+    }
+    .cust_input03 input {
+        width: 400px;
+    }
+    /* 버튼 */
+    .cust_apply_button button {
+        width: 215px;
+        height: 70px;
+        font-size: 16px;
+    }
+    /* 셀렉트 */
+    .cust_select_mid {
+        width: 200px;
+        font-size: 14px;
+    }
+    .cust_device_a_non {
+        width: 20px;
+        height: 20px;
+    }
+    /* input tag */
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only, .cust_input input, .cust_input02 input, .cust_input03 input,
+    .cust_input input::placeholder, .cust_input02 input::placeholder, .cust_input03 input::placeholder {
+        width: 200px;
+        font-size: 14px;
+    }
+    .apply_child {
+        font-size: 13px;
+    }
+    .cust_fill_btn_sm {
+        width: 180px;
+        height: 63px;
+    }
+    .media_apply_blk02 {
+        width: 100% !important;
+    }
+    .cust_textare_xl {
+        font-size: 12px;
+        line-height: 23px;;
+    }
+    .cust_chart {
+        height: 400px;
+    }
+    /* 상세 */
+    .media_apply_view {
+        display: inline-block;
+        width: 300px;
+        text-align: right;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .media_apply_view_lf {
+        display: inline-block;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+        top: 5px;
+        margin-left: 0;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only, .cust_select_mid,
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only, .cust_input input,
+    .cust_input02 input, .cust_input03 input, .cust_input input::placeholder, .cust_input02 input::placeholder, .cust_input03 input::placeholder, .cust_fill_btn_sm, .cust_input input, .cust_input02 input, .cust_input03 input {
+        height: 50px;
+    }
+
+}
+
+/* 530 */
+@media screen and ( max-width:530px) {
+    .cust_list_wrap {
+        width: 340px;
+        padding: 30px;
+    }
+    .cust_fill_btn_sm {
+        width: 125px;
+    }
+    .cust_fill_btn_lg, .cust_fill_btn_sm {
+        margin-left: 20px;
+    }
+    .media_apply_ml0 {
+        margin-left: 0;
+    }
+    .cust_apply_button button {
+        width: 180px;
+        height: 70px;
+    }
+    .media_apply_view {
+        width: 240px;
+    }
+    .media_apply_view_lf {
+        width: 240px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only {
+        height: 50px;
+    }
+}
+
+/* 430 */
+@media screen and ( max-width:430px) {
+
+    .cust_list_wrap {
+        width: 280px;
+    }
+    .media_apply_midtxt {
+        font-size: 13px;
+    }
+
+
+    .media_apply_logo img {
+        width: 80%;
+    }
+    .media_apply_xltxt {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .media_apply_logo_wrap {
+        width: 340px;
+    }
+    .cust_select_mid {
+        width: 180px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only,
+    .cust_input input, .cust_input02 input, .cust_input03 input, .cust_input input::placeholder,
+    .cust_input02 input::placeholder, .cust_input03 input::placeholder {
+        width: 180px;
+        font-size: 14px;
+    }
+    .cust_fill_btn_sm {
+        width: 145px;
+    }
+    .cust_textare_xl {
+        padding: 10px;
+    }
+    .apply_child {
+        font-size: 11px;
+    }
+    .apply_input {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .cust_apply_button button {
+        width: 150px;
+        height: 70px;
+    }
+    .cust_block45 ul li {
+        padding: 10px 20px;
+    }
+    .media_apply_view {
+        width: 200px;
+    }
+    .media_apply_view_lf {
+        width: 200px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only {
+        font-size: 13px;
+    }
+}
+/* 360 */
+@media screen and ( max-width:360px) {
+    .media_apply_logo_wrap {
+        width: 280px;
+        padding: 0 20px;
+    }
+    .media_apply_logo {
+        width: 140px;
+    }
+    .cust_list_wrap {
+        width: 260px;
+        padding: 30px 20px;
+    }
+    .media_apply_midtxt {
+        font-size: 12px;  
+    }
+    .cust_apply_button button {
+        width: 130px;
+    height: 70px;
+    }
+    .media_apply_view {
+        width: 180px;
+    }
+    .media_apply_view_lf {
+        width: 180px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only {
+        font-size: 12px;
+    }
+}

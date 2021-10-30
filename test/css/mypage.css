@@ -1,0 +1,262 @@
+.cust_mypage_table {
+    width: 100%;
+}
+
+.cust_mypage_table th {
+    height: 74px;
+    background: #5D5FEF;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.cust_mypage_table th:first-child {
+    border-top-left-radius: 10px;
+}
+.cust_mypage_table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.cust_mypage_table td {
+    border: 1px solid #DDDCDC;
+    padding: 40px 0px;
+}
+
+.cust_mypage_table td:nth-child(1) {
+    width:40%
+}
+.cust_mypage_table td:nth-child(2) {
+    width:20%
+}
+.cust_mypage_table td:nth-child(3) {
+    width:20%
+}
+.cust_mypage_table td:nth-child(4) {
+    width:20%
+}
+.cust_mypage_po {
+    position: relative;
+    top: 4px;
+}
+.cust_mypage_title_medi {
+    position: relative;
+    top: -5px;
+}
+.cust_mypage_title_buy {
+    position: relative;
+    top: 13px; 
+}
+.cust_mypage_title_alni {
+    margin-top: 60px;
+}
+
+.media_mypage_xltxt {
+    font-size: 25px;
+}
+.media_mypage_bigtxt {
+    font-size: 18px;
+}
+.media_mypage_bmidtxt {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.media_mypage_midtxt {
+    font-size: 14px; 
+}
+.media_mypage_smtxt {
+    font-size: 12px;
+}
+.media_mypage_xmtxt {
+    font-size: 11px;
+}
+.media_mypage_blk_mt {
+    margin-top: 30px;
+}
+.media_aside_icon {
+    display: none;
+}
+.mypage_detailview_btn {
+    height: 50px;
+}
+/* 미디어 쿼리 */
+
+/* 1430 */
+@media screen and ( max-width:1430px) {
+    .media_apply_blk {
+        width: 100%;
+    }
+    .media_apply_prinfo {
+        display: block;
+    }
+    .mypage_userinfo_btn, .mypage_userout_btn {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .mypage_userout_btn {
+        margin-left: 20px;;
+    }
+    /*텍스트*/
+    .media_mypage_xltxt {
+        font-size: 25px;
+    }
+    .media_mypage_bigtxt {
+        font-size: 18px;
+    }
+    .media_mypage_bmidtxt {
+        font-size: 18px; 
+    }
+    .media_mypage_midtxt {
+        font-size: 14px; 
+    }
+    .media_mypage_smtxt {
+        font-size: 12px;
+    }
+    .media_mypage_xmtxt {
+        font-size: 11px;
+    }
+    .media_mypage_blk_mt {
+        margin-top: 30px;
+    }
+    .cust_input03 input {
+        width: 400px;
+    }
+}
+/* 768 */
+@media screen and ( max-width:768px) {
+
+    .media_aside_icon {
+        display: block;
+        margin-top: 11px;
+    }
+    /*텍스트*/
+
+    .media_mypage_bmidtxt {
+        font-size: 14px; 
+    }
+    .cust_mypage_title_medi {
+        font-size: 12px; 
+    }
+    .media_mypage_xltxt {
+        font-size: 20px;
+    }
+    .cust_mypage_title_buy {
+        top: 8px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only {
+        width: 200px;
+        font-size: 14px;
+        height: 50px;
+    }
+    .cust_input input, .cust_input02 input, .cust_input03 input {
+        width: 200px;
+        font-size: 14px;
+        height: 50px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only, .cust_input input, .cust_input02 input, .cust_input03 input,
+    .cust_input input::placeholder, .cust_input02 input::placeholder, .cust_input03 input::placeholder {
+        width: 200px;
+        font-size: 14px;
+        height: 50px;
+    }
+    /* 수정 버튼 */
+    .cust_fill_btn_lg, .cust_fill_btn_sm, .cust_out_btn_lg, .cust_out_btn_sm {
+        width: 200px;
+        height: 62px;
+    }
+
+}
+
+/* 530 */
+@media screen and ( max-width:530px) {
+
+    .media_aside_icon {
+        display: block;
+        margin-top: 11px;
+    }
+    /*텍스트*/
+
+    .media_mypage_bmidtxt {
+        font-size: 14px; 
+    }
+    .cust_mypage_title_medi {
+        font-size: 12px; 
+    }
+    .cust_list_wrap {
+        padding: 30px 30px;
+    }
+    .mypage_userinfo_btn, .mypage_userout_btn {
+        width: 180px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .media_mypage_xltxt {
+        font-size: 20px;
+    }
+
+}
+
+/* 460 */
+@media screen and ( max-width:460px) {
+
+    .cust_list_wrap {
+        width: 320px;
+    }
+    .mypage_userinfo_btn, .mypage_userout_btn {
+        width: 150px;
+    }
+    .media_mypage_xltxt {
+        margin-left: 10px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only {
+        width: 160px;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .cust_input input, .cust_input02 input, .cust_input03 input {
+        width: 160px;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    /* 수정 버튼 */
+    .cust_fill_btn_lg, .cust_fill_btn_sm, .cust_out_btn_lg, .cust_out_btn_sm {
+        width: 160px;
+        height: 62px;
+    }
+
+}
+
+/* 400 */
+@media screen and ( max-width:400px) {
+
+    .cust_list_wrap {
+        width: 260px;
+    }
+    .mypage_userinfo_btn, .mypage_userout_btn {
+        width: 120px;
+    }
+    .media_mypage_xltxt {
+        margin-left: 0;
+    }
+    .cust_mypage_title_medi {
+        display: none
+    }
+    .mypage_detailview_btn {
+        width: 150px;
+    }
+    .cust_input input:read-only, .cust_input02 input:read-only, .cust_input03 input:read-only {
+        width: 150px;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .cust_input input, .cust_input02 input, .cust_input03 input {
+        width: 150px;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    /* 수정 버튼 */
+    .cust_fill_btn_lg, .cust_fill_btn_sm, .cust_out_btn_lg, .cust_out_btn_sm {
+        width: 140px;
+        height: 62px;
+    }
+
+}

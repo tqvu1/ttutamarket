@@ -1,0 +1,59 @@
+.slider_sale_wrap {
+    width: 1400px;
+}
+.media_aside_icon {
+    display: none;
+}
+
+/* 미디어 쿼리 */
+/* 1430 */
+@media screen and ( max-width:1430px) {
+    /* 슬라이더 */
+    .slider_sale_wrap {
+        width: 733px;
+    }
+    .bx-wrapper .bx-pager {
+        display: none;
+    }
+
+}
+
+/* 768 */
+@media screen and ( max-width:768px) {
+    /* 슬라이드 */
+    .slider_sale_wrap {
+        width: 460px;
+    }
+    .cust_cont_wrap {
+        margin-top: 20px;
+    }
+    .slider_sale_wrap {
+        margin-top: 50px;
+    }
+    .media_aside_icon {
+        display: block;
+        margin-top: 11px;
+    }
+}
+
+/* 530 */
+@media screen and ( max-width:530px) {
+    .slider_sale_wrap {
+        width: 400px;
+        margin-top: 30px;
+    }
+    .cust_cont_wrap {
+        margin-top: 10px;
+    }
+}
+
+/* 430 */
+@media screen and ( max-width:430px) {
+    .slider_sale_wrap {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .cust_cont_wrap {
+        margin-top: 0px;
+    }
+}
